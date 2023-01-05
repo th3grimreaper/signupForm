@@ -4,7 +4,79 @@
   padding: 0;
 }
 
+:root {
+  --text-color: #fff;
+  --bg-col: rgba(0, 0, 0, 0.5);
+}
+
 @font-face {
   font-family: norseBold;
   src: url(./fonts/Norse-Bold.otf);
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+.logo-container {
+  background: no-repeat url(./images/unsplash.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+
+#leaves {
+  object-fit: fill;
+  display: none;
+}
+
+#logo {
+  width: clamp(50px, 10vw, 75px);
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-family: norseBold;
+  font-size: clamp(2rem, 10vw, 3rem);
+  color: var(--text-color);
+}
+
+/* #logo { */
+/*   width: clamp(50px, 10vw, 75px); */
+/*   margin-right: 0.5rem; */
+/* } */
+/**/
+/* .img-container { */
+/*   display: grid; */
+/*   max-width: 450px; */
+/*   height: 100vh; */
+/*   position: relative; */
+/*   overflow-y: hidden; */
+/* } */
+/**/
+/* #leaves { */
+/*   object-fit: cover; */
+/* } */
+/**/
+/* .logo-container { */
+/*   background-color: var(--bg-col); */
+/*   display: flex; */
+/*   justify-content: center; */
+/*   align-items: center; */
+/*   position: absolute; */
+/*   top: 20%; */
+/*   left: 0; */
+/*   right: 0; */
+/* } */
+/**/
+/* .logo-text { */
+/*   font-family: norseBold; */
+/*   font-size: clamp(2rem, 10vw, 3rem); */
+/*   color: var(--text-color); */
+/* } */
