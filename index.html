@@ -24,6 +24,49 @@
           <br />
           You <em>know</em> you want to.
         </div>
+        <form action="#" class="signup-form">
+          <div class="form-container">
+            <p class="header">Let's do this!</p>
+            <div class="parent-row">
+              <div class="form-row">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" />
+              </div>
+              <div class="form-row">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" />
+              </div>
+            </div>
+            <div class="parent-row">
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-row">
+                <label for="phone_num">Phone Number</label>
+                <input
+                  type="number"
+                  name="phone_num"
+                  pattern="\d{10}"
+                  id="phone_num"
+                />
+              </div>
+            </div>
+            <div class="parent-row">
+              <div class="form-row">
+                <label for="pswd">Password</label>
+                <input type="password" name="pswd" id="pswd" />
+              </div>
+              <div class="form-row">
+                <label for="cnf_pswd">Confirm Password</label>
+                <input type="password" name="cnf_pswd" id="cnf_pswd" />
+              </div>
+            </div>
+          </div>
+          <p class="button-container">
+            <button type="submit" class="submit-btn">Create Account</button>
+          </p>
+        </form>
       </main>
     </div>
   </body>

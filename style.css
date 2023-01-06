@@ -5,8 +5,12 @@
 }
 
 :root {
-  --text-color: #fff;
-  --bg-col: rgba(0, 0, 0, 0.5);
+  --logotext-color: #ffffff;
+  --logo-bg-col: rgba(0, 0, 0, 0.5);
+  --info-bg-col: #f9fafb;
+  --form-bg-col: #ffffff;
+  --shadow-col: #313838;
+  --main-font: 'Roboto', sans-serif;
 }
 
 @font-face {
@@ -44,39 +48,113 @@ img {
 .logo-text {
   font-family: norseBold;
   font-size: clamp(2rem, 10vw, 3rem);
-  color: var(--text-color);
+  color: var(--logotext-color);
 }
 
-/* #logo { */
-/*   width: clamp(50px, 10vw, 75px); */
-/*   margin-right: 0.5rem; */
-/* } */
-/**/
-/* .img-container { */
-/*   display: grid; */
-/*   max-width: 450px; */
-/*   height: 100vh; */
-/*   position: relative; */
-/*   overflow-y: hidden; */
-/* } */
-/**/
-/* #leaves { */
-/*   object-fit: cover; */
-/* } */
-/**/
-/* .logo-container { */
-/*   background-color: var(--bg-col); */
-/*   display: flex; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/*   position: absolute; */
-/*   top: 20%; */
-/*   left: 0; */
-/*   right: 0; */
-/* } */
-/**/
-/* .logo-text { */
-/*   font-family: norseBold; */
-/*   font-size: clamp(2rem, 10vw, 3rem); */
-/*   color: var(--text-color); */
-/* } */
+main {
+  padding: 3em 0;
+  font-family: var(--main-font);
+  background-color: var(--info-bg-col);
+}
+
+.info {
+  width: 80%;
+  padding: 0 1em;
+  font-weight: 700;
+}
+
+.form-container {
+  background-color: var(--form-bg-col);
+  margin-top: 3em;
+  padding: 2em 0;
+  box-shadow: 0 4px 5px var(--shadow-col);
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+.parent-row,
+.header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label,
+input {
+  /* width: clamp(200px, 20vw, 250px); */
+  /* width: max(30%, 250px); */
+  width: 250px;
+  font-size: 14px;
+}
+
+label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+input {
+  margin-bottom: 1.5em;
+  padding: 0.25em;
+}
+
+.button-container {
+  margin: 3em 1em;
+}
+
+@media (min-width: 600px) {
+  .parent-row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-row {
+    width: 50%;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+  }
+
+  #leaves {
+    display: grid;
+  }
+
+  .img-container {
+    position: relative;
+    max-width: 450px;
+  }
+
+  #logo {
+    width: clamp(50px, 10vw, 75px);
+    margin-right: 0.5rem;
+  }
+
+  .logo-container {
+    background: var(--logo-bg-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+  }
+
+  .logo-text {
+    font-family: norseBold;
+    font-size: clamp(2rem, 10vw, 3rem);
+    color: var(--logotext-color);
+  }
+}
