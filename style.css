@@ -96,9 +96,7 @@ main {
 
 label,
 input {
-  /* width: clamp(200px, 20vw, 250px); */
-  /* width: max(30%, 250px); */
-  width: 250px;
+  width: clamp(250px, 20vw, 300px);
   font-size: 14px;
 }
 
