@@ -15,7 +15,7 @@
           <div class="logo-text">Sign Up</div>
         </div>
         <div class="img-credits">
-          <p>
+          <p class="credits">
             Photo by <a href="https://unsplash.com/@malmanxx">malmanxx</a> on
             <a href="https://unsplash.com/">Unsplash</a>
           </p>
@@ -61,11 +61,17 @@
             <div class="parent-row">
               <div class="form-row">
                 <label for="pswd">Password</label>
-                <input type="password" name="pswd" id="pswd" />
+                <input
+                  type="password"
+                  name="pswd"
+                  minlength="8"
+                  id="pswd"
+                  required
+                />
               </div>
               <div class="form-row">
                 <label for="cnf_pswd">Confirm Password</label>
-                <input type="password" name="cnf_pswd" id="cnf_pswd" />
+                <input type="password" name="cnf_pswd" id="cnf_pswd" required />
               </div>
             </div>
           </div>
