@@ -121,6 +121,7 @@ input:is(:invalid) {
 .button-container {
   padding-top: 2em;
   font-size: 1rem;
+  padding-bottom: 1em;
 }
 
 .submit-btn {
