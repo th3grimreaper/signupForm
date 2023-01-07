@@ -35,23 +35,48 @@
             <p class="header">Let's do this!</p>
             <div class="parent-row">
               <div class="form-row">
-                <label for="first_name">First Name</label>
-                <input type="text" name="first_name" id="first_name" />
+                <label for="first_name">
+                  First Name <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="John"
+                  name="first_name"
+                  id="first_name"
+                  required
+                />
               </div>
               <div class="form-row">
-                <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="last_name" />
+                <label for="last_name">
+                  Last Name <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Doe"
+                  name="last_name"
+                  id="last_name"
+                  required
+                />
               </div>
             </div>
             <div class="parent-row">
               <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <label for="email">
+                  Email <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="email@address.com"
+                  name="email"
+                  id="email"
+                  required
+                />
               </div>
               <div class="form-row">
                 <label for="phone_num">Phone Number</label>
                 <input
                   type="number"
+                  placeholder="1234567890"
                   name="phone_num"
                   pattern="\d{10}"
                   id="phone_num"
@@ -60,7 +85,9 @@
             </div>
             <div class="parent-row">
               <div class="form-row">
-                <label for="pswd">Password</label>
+                <label for="pswd">
+                  Password <span aria-label="required">*</span>
+                </label>
                 <input
                   type="password"
                   name="pswd"
@@ -70,7 +97,9 @@
                 />
               </div>
               <div class="form-row">
-                <label for="cnf_pswd">Confirm Password</label>
+                <label for="cnf_pswd">
+                  Confirm Password <span aria-label="required">*</span>
+                </label>
                 <input type="password" name="cnf_pswd" id="cnf_pswd" required />
               </div>
             </div>
