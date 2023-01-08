@@ -14,6 +14,7 @@
   --pine-col: #596d48;
   --darkpine-col: #37442d;
   --shadow-col: #9e9e9e;
+  --inputbox-shadow: #5294e2;
   --main-font: 'Roboto', sans-serif;
 }
 
@@ -114,8 +115,12 @@ input {
   border-radius: 5px;
 }
 
-input:is(:invalid) {
+input:invalid {
   border: 1px solid var(--invalid-border);
+}
+
+input:focus {
+  box-shadow: 1px 1px 10px var(--inputbox-shadow);
 }
 
 .button-container {
