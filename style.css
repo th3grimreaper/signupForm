@@ -119,7 +119,7 @@ input:invalid {
   border: 1px solid var(--invalid-border);
 }
 
-input:focus {
+input:is(:focus, :active) {
   border: 1px solid var(--inputbox-shadow);
   box-shadow: 1px 1px 10px var(--inputbox-shadow);
 }
