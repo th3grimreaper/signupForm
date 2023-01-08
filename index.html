@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Odin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div class="container">
-    <aside class="img-container">
-      <img src="./images/unsplash.jpg" alt="green leaves" id="leaves" />
-      <div class="logo-container">
-        <img src="./images/odin-lined.png" alt="odin logo" id="logo" />
-        <div class="logo-text">Sign Up</div>
-      </div>
-      <div class="img-credits">
-        <p class="credits">
-          Photo by <a href="https://unsplash.com/@malmanxx">malmanxx</a> on
-          <a href="https://unsplash.com/">Unsplash</a>
-        </p>
-      </div>
-    </aside>
-    <main>
-      <div class="info">
-        This is not a real online service! You know you need something like this in your life to help you realize your
-        deepest dreams. Sign up
-        <em>now</em> to get started.
-        <br />
-        <br />
-        You <em>know</em> you want to.
-      </div>
-      <form action="#" class="signup-form">
-        <div class="form-container">
-          <p class="header">Let's do this!</p>
-          <div class="parent-row">
-            <div class="form-row">
-              <label for="first_name"> First Name <span aria-label="required">*</span> </label>
-              <input type="text" placeholder="John" name="first_name" id="first_name" required />
-            </div>
-            <div class="form-row">
-              <label for="last_name"> Last Name <span aria-label="required">*</span> </label>
-              <input type="text" placeholder="Doe" name="last_name" id="last_name" required />
-            </div>
-          </div>
-          <div class="parent-row">
-            <div class="form-row">
-              <label for="email"> Email <span aria-label="required">*</span> </label>
-              <input type="email" placeholder="email@address.com" name="email" id="email" required />
-            </div>
-            <div class="form-row">
-              <label for="phone_num">Phone Number <span aria-label="required">*</span></label>
-              <input type="tel" placeholder="+91-1234567890" name="phone_num" pattern="\+(\d{2})[\-](\d{10})"
-                id="phone_num" required />
-            </div>
-          </div>
-          <div class="parent-row">
-            <div class="form-row">
-              <label for="pswd"> Password <span aria-label="required">*</span> </label>
-              <input type="password" name="pswd" minlength="8" id="pswd" required />
-            </div>
-            <div class="form-row">
-              <label for="cnf_pswd"> Confirm Password <span aria-label="required">*</span> </label>
-              <input type="password" name="cnf_pswd" id="cnf_pswd" required />
-            </div>
-          </div>
+  <body>
+    <div class="container">
+      <aside class="img-container">
+        <img src="./images/unsplash.jpg" alt="green leaves" id="leaves" />
+        <div class="logo-container">
+          <img src="./images/odin-lined.png" alt="odin logo" id="logo" />
+          <div class="logo-text">Sign Up</div>
         </div>
-        <div class="button-container">
-          <button type="submit" class="submit-btn">Create Account</button>
-          <p class="ask-login">Already have and account? <a href="#" id="hyper-login">Log in</a></p>
+        <div class="img-credits">
+          <p class="credits">
+            Photo by <a href="https://unsplash.com/@malmanxx">malmanxx</a> on
+            <a href="https://unsplash.com/">Unsplash</a>
+          </p>
         </div>
-      </form>
-    </main>
-  </div>
-</body>
-
+      </aside>
+      <main>
+        <div class="info">
+          This is not a real online service! You know you need something like this in your life to help you realize your
+          deepest dreams. Sign up
+          <em>now</em> to get started.
+          <br />
+          <br />
+          You <em>know</em> you want to.
+        </div>
+        <form action="#" class="signup-form">
+          <div class="form-container">
+            <p class="header">Let's do this!</p>
+            <div class="parent-row">
+              <div class="form-row">
+                <label for="first_name"> First Name <span aria-label="required">*</span> </label>
+                <input type="text" placeholder="John" name="first_name" id="first_name" required />
+              </div>
+              <div class="form-row">
+                <label for="last_name"> Last Name <span aria-label="required">*</span> </label>
+                <input type="text" placeholder="Doe" name="last_name" id="last_name" required />
+              </div>
+            </div>
+            <div class="parent-row">
+              <div class="form-row">
+                <label for="email"> Email <span aria-label="required">*</span> </label>
+                <input type="email" placeholder="email@address.com" name="email" id="email" required />
+              </div>
+              <div class="form-row">
+                <label for="phone_num">Phone Number <span aria-label="required">*</span></label>
+                <input
+                  type="tel"
+                  placeholder="+91-1234567890"
+                  name="phone_num"
+                  pattern="\+(\d{2})[\-](\d{10})"
+                  id="phone_num"
+                  required
+                />
+              </div>
+            </div>
+            <div class="parent-row">
+              <div class="form-row">
+                <label for="pswd"> Password <span aria-label="required">*</span> </label>
+                <input type="password" name="pswd" minlength="8" id="pswd" required />
+              </div>
+              <div class="form-row">
+                <label for="cnf_pswd"> Confirm Password <span aria-label="required">*</span> </label>
+                <input type="password" name="cnf_pswd" id="cnf_pswd" required />
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="submit" class="submit-btn">Create Account</button>
+            <p class="ask-login">Already have and account? <a href="#" id="hyper-login">Log in</a></p>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
