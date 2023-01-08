@@ -87,8 +87,8 @@ main {
 .header,
 .info,
 div.button-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 2em;
 }
 
 .form-row {
@@ -151,7 +151,7 @@ input:focus {
   color: var(--pine-col);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 678px) {
   .parent-row {
     display: flex;
     justify-content: space-around;
@@ -163,7 +163,7 @@ input:focus {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1120px) {
   .container {
     flex-direction: row;
   }
